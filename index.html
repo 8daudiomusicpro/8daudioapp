@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .qr-container {
+            margin-top: 30px;
+        }
+        .qr-code {
+            margin: 0 20px;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Our App</h1>
+        <p>Scan the QR codes below to download the app for your platform.</p>
+        <div class="qr-container">
+            <a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://storage.appilix.com/uploads/app-apk-67b339d87e476-1739799000.apk" alt="Android QR Code" class="qr-code">
+                <h2>android app</h2>
+            </a>
+            <a>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://warehouse.appilix.com/uploads/app-ipa-67b340407bdca-1739800640.ipa" alt="iOS QR Code" class="qr-code">
+                <h2>ios app</h2>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
